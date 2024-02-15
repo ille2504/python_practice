@@ -5,6 +5,8 @@ print(len(list))
 print(list[1])
 list[1] = 'Asterisk'
 
+print(list.count('cisco'))
+
 
 list.append("HP")
 
