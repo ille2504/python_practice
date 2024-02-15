@@ -1,6 +1,6 @@
-list = ['cisco', 'hp', 'avaya', 'HP', 'Asterisk']
+listr = ['cisco', 'hp', 'avaya', 'HP', 'Asterisk']
 
-new_set = set(list)
+new_set = set(listr)
 print(new_set)
 
 print('avaya' in new_set)
@@ -34,3 +34,12 @@ print(vendor)
 
 (a, b, c) = (1, 2, 3)
 print(a)
+
+r = range(10)
+print(list(r))
+
+print(list(r)[2:5])
+
+r1 = range(10, 100, 10)
+
+print(list(r1).index(30))
