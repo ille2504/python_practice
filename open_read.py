@@ -13,6 +13,7 @@ for i in myfile.readlines():
 
 newfile = open('/Users/jmillescas/python_practice/info2.txt', 'w+')
 newfile.write('appending info \nin the info2.txt again')
+newfile.truncate()
 newfile.close()
 
 newfile = open('/Users/jmillescas/python_practice/info2.txt', 'a+')
@@ -23,3 +24,4 @@ print(newfile.closed)
 
 with open('/Users/jmillescas/python_practice/info2.txt', 'w+') as f:
     f.write('hello python')
+
