@@ -31,6 +31,3 @@ def my_function():
 
 print(my_function())
 my_var_mo = 10
-
-if __name__ == '__main__':
-    print('print from module')
