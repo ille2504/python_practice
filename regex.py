@@ -1,6 +1,13 @@
 import re
 
-mystr = 'You can lear any programming language you want, some of them are: Phyton2, Phyton3, Java, JavaScript or PHP'
+mystr = 'You cant lear any programming language you want, some of them are: Phyton2, Phyton3, Java, JavaScript or PHP'
+
+a = re.search(r'^\w{3}\s\w{4}', mystr)
+print('this: ' ,a)
+
+
+a = re.search(r'PHP\Z', mystr)
+print(a)
 
 a = re.match('You', mystr)
 print(a)
@@ -18,3 +25,13 @@ print(b.group(2))
 print(b.group(3))
 print(b.group(4))
 print(b.groups())
+
+a = re.findall(r"\d\d\.\d{2}\.[0-9][0-9]\.[0-9]{1,3}", arp)
+
+b = re.sub(r"\d" , "7", arp)
+print(b)
+
+regex_str = "123.456.789   0 PYTHON 3"
+regex = re.sub(r"(.+?)\s\s[0-1]\s\w{6}\s[0-9]$", "%", regex_str)
+
+print(regex)
